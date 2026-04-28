@@ -29,16 +29,6 @@ Este repositorio reúne experiencias prácticas, tanto componentes técnicos com
 (Iré agregando más casos progresivamente)
 
 
-## 🧠 Alcance
-
-Este repositorio cubre tanto componentes técnicos como funcionales, incluyendo:
-* Arquitectura de datos
-* Modelado semántico
-* Integraciones backend
-* Visualización y analítica
-* Seguridad y control de acceso
-
-
 ## 🛠️ Tecnologías utilizadas
       ✅ Power BI
       ✅ MYSQL
