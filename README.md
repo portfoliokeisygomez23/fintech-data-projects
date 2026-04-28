@@ -4,14 +4,15 @@ Repositorio de portfolio con casos reales de analítica y Business Intelligence 
 ⚠️ Todo el contenido está anonimizado y no incluye información sensible.
 
 
-## 🚀 Sobre este repositorio
-Este repositorio reúne experiencias prácticas trabajando con:
-
-    * Modelado de datos (Data Warehouse / Data Models)
-    * ETL / ELT y pipelines de datos
-    * Visualización en dashboards
-    * Arquitectura de soluciones analíticas
-    * Casos de uso orientados al negocio
+## 🧠 Alcance
+Este repositorio reúne experiencias prácticas, tanto componentes técnicos como funcionales, incluyendo:
+* Arquitectura de soluciones analíticas
+* Modelado de datos (Data Warehouse / Data Models)
+* ETL / ELT y pipelines de datos
+* Integraciones backend
+* Visualización y analítica en dashboards
+* Seguridad y control de acceso
+* Casos de uso orientados al negocio
 
 
 ## 🧩 Casos de estudio
@@ -26,6 +27,17 @@ Este repositorio reúne experiencias prácticas trabajando con:
     * Visualización de alertas en dashboards<br>
 
 (Iré agregando más casos progresivamente)
+
+
+## 🧠 Alcance
+
+Este repositorio cubre tanto componentes técnicos como funcionales, incluyendo:
+* Arquitectura de datos
+* Modelado semántico
+* Integraciones backend
+* Visualización y analítica
+* Seguridad y control de acceso
+
 
 ## 🛠️ Tecnologías utilizadas
       ✅ Power BI
