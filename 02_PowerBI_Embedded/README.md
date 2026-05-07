@@ -28,19 +28,6 @@ Adquirir una capacidad dedicada Power BI Embedded A3 a través de Microsoft Azur
 ![Arquitectura](../Imagenes/Arquitectura_Solucion.jpg)
 
 
-## 💰 Costo de la implementación
-**Escenario base:**
-* USD $735 mensuales (uso 24/7)
-* Facturación por hora (~USD $1.008/hora aprox.)
-
-**Optimización de Costos**
-Dado que la capacidad puede pausarse, el escenario costo estimado
-
-![Precios](../Imagenes/Cuadro_precios.jpg)
-
-📌 Modelo flexible: pago por uso (se puede apagar para ahorrar costos)
-
-
 ## 🚀 Resultados
 *	Habilitación de reportes en la APP Payku Usuarios
 *	Mejora en la entrega de información a clientes
