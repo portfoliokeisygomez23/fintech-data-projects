@@ -28,7 +28,7 @@ La empresa no contaba con una estrategia de datos. La información residía en b
 ### 3. Optimización de Carga: Actualización Incremental
 Dada la naturaleza transaccional del negocio Fintech, implementé una estrategia de **Incremental Refresh** para maximizar el rendimiento:
 * **Configuración de Parámetros:** Uso de `RangeStart` y `RangeEnd` para segmentar la ingesta de datos.
-* **Eficiencia de Recursos:** Reducción del tiempo de refresco al procesar solo los datos nuevos, minimizando el impacto en el servidor MySQL origen.
+* **Eficiencia de Recursos:** Reducción del tiempo de refresco al procesar solo los datos nuevos, minimizando el impacto en el servidor MySQL origen ni excediendo los límites de memoria de Power BI Service.
 
 ---
 
