@@ -24,6 +24,7 @@ Se realizó la provisión de una capacidad dedicada en Microsoft Azure y una rei
 * **Optimización de Memoria:** Cada modelo alimenta un reporte específico, permitiendo un uso eficiente de la RAM de la capacidad A3 y reduciendo los tiempos de carga en la web.
 * **Autenticación Robusta:** Uso de **Service Principal** (App Only) para la comunicación segura entre el backend de la aplicación y Power BI Service.
 * **Integración Frontend:** Inserción de reportes mediante el SDK de Power BI para **React y Javascript**.
+* **Seguridad de Fila:** Se configura el parametro de Cliente Identificador en cada uno de los modelos semanticos de Power BI para que la API Rest realice las validaciones y filtre la información solo del cliente que inició sesion en la página web de la empresa.
 
 ## ✅ Arquitectura Implementada
 
@@ -36,6 +37,9 @@ Se realizó la provisión de una capacidad dedicada en Microsoft Azure y una rei
 * **Mejora en Performance:** Tiempos de respuesta optimizados gracias a la división de modelos y la gestión de capacidad dedicada.
 * **Producto Data-Driven:** Base tecnológica sólida para ofrecer analítica avanzada como un valor agregado del producto financiero.
 * **Seguridad Garantizada:** Aplicación estricta de RLS, asegurando que cada usuario acceda únicamente a sus propios registros.
+
+Ejemplo de un reporte:
+![Arquitectura](../Imagenes/Reporte_RLS.jpg)
 
 ---
 
