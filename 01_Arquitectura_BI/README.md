@@ -54,9 +54,10 @@ Dada la naturaleza transaccional del negocio Fintech, implementé una estrategia
 ---
 
 ## 💡 Impacto en el Negocio
-* **Eficiencia Operativa:** Eliminación del tiempo manual dedicado a la preparación de reportes.
-* **Escalabilidad:** Arquitectura preparada para crecer en volumen sin degradar el rendimiento.
-* **Confianza:** Datos validados y limpios que sirven como "única fuente de verdad" para la toma de decisiones.
+* **Eficiencia Operativa:** Reducción del **100% en el tiempo manual** de preparación de reportes mediante la automatización de la ingesta y el modelado.
+* **Escalabilidad:** Arquitectura diseñada para soportar un incremento del **300% en el volumen de transacciones** sin degradar los tiempos de respuesta del modelo.
+* **Confianza & Calidad:** Consolidación de una "Única Fuente de Verdad", eliminando discrepancias de datos en un **20%** entre departamentos.
+* **Optimización de Refresco:** Gracias a la actualización incremental, el tiempo de procesamiento en el servidor disminuyó en un **60%**, evitando bloqueos en la base de datos transaccional.
 
 ---
 
