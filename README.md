@@ -18,18 +18,19 @@ Este repositorio cubre el ciclo de vida completo del dato, aplicando estándares
 * **Gobernanza & Seguridad:** Control de acceso riguroso mediante **Row-Level Security (RLS)** para asegurar la confidencialidad.
 
 
-## 🧩 Casos de estudio
-* Implementación arquitectura BI para negocio fintech
-    * Diseño de modelo semántico
-    * Construcción de dashboards operativos
-    * Aplicación de Row-Level Security (RLS)
-    * Integración con aplicaciones vía APIs<br>
-* Alertas de fraude (Compliance)
-    * Definición de reglas de negocio
-    * Modelado de datos para detección
-    * Visualización de alertas en dashboards<br>
+## 🚀 Proyectos Destacados
 
-(Iré agregando más casos progresivamente)
+### 1. [Arquitectura BI Fintech](./01_Arquitectura_BI)
+*Implementación de un modelo semántico centralizado y dashboards operativos para el core del negocio.*
+* **Tech:** Microsoft Power BI, MySQL, Microsoft Power BI Gateway.
+* **Impacto:** Unificación de silos de datos y control de acceso granular por rol.
+
+### 2. [Compliance & Detección de Fraude](./02_Fraude_Compliance)
+*Sistema de monitoreo y alertas de transacciones sospechosas basado en reglas de negocio.*
+* **Tech:** Microsoft Power BI, MySQL, Data Modeling, DAX.
+* **Impacto:** Automatización de alertas críticas para la mitigación de riesgos financieros.
+
+*(Iré agregando más casos progresivamente 🏗️)*
 
 
 ## 🛠️ Stack Tecnológico
