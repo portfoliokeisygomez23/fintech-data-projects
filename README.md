@@ -58,11 +58,12 @@ Este repositorio cubre el ciclo de vida completo del dato, aplicando estándares
 ## 🎯 Objetivo
 Demostrar la capacidad de transformar datos complejos en insights accionables para el negocio, garantizando siempre la integridad y seguridad de la información financiera.
 
+
 ## 📄 Licencia
-Este repositorio está bajo licencia<br>
-👉 Creative Commons Attribution-NonCommercial 4.0
+👉 Este repositorio está bajo la licencia [Creative Commons Attribution-NonCommercial 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
 
 
-👤 Autor<br>
+## 👤 Autor<br>
 Keisy Gómez<br>
-Especialista en Business Intelligence & Data Analytics
+Especialista en Business Intelligence & Data Analytics<br>
+[www.linkedin.com/in/keisy-gómez-22352582] | [keisygomez23@gmail.com]
