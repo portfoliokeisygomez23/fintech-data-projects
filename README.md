@@ -57,7 +57,7 @@ Este repositorio cubre el ciclo de vida completo del dato, aplicando estándares
      * ✅ ETL/ELT
      * ✅ Row-Level Security (RLS)
 
-  ---
+---
 
 ## 🎯 Objetivo
 Demostrar la capacidad de transformar datos complejos en insights accionables para el negocio, garantizando siempre la integridad y seguridad de la información financiera.
