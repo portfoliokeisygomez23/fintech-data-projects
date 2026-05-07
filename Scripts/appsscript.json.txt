@@ -1,0 +1,15 @@
+{
+  "timeZone": "",
+  "dependencies": {
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
+  "oauthScopes": [
+  "https://www.googleapis.com/auth/gmail.readonly",
+  "https://www.googleapis.com/auth/devstorage.read_write",
+  "https://www.googleapis.com/auth/script.external_request",
+  "https://www.googleapis.com/auth/devstorage.read_only",
+  "https://www.googleapis.com/auth/bigquery",
+  "https://www.googleapis.com/auth/gmail.send"
+]
+}
