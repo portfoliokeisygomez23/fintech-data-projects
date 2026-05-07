@@ -24,6 +24,7 @@ La empresa no contaba con una estrategia de datos. La información residía en b
 * **Optimización de Recursos:** Implementación de **Live Connection** para permitir que múltiples reportes consuman el mismo modelo. Esto garantiza la consistencia de las métricas (Única Fuente de Verdad) y reduce drásticamente el uso de almacenamiento y memoria.
 * **Integridad Referencial:** Establecimiento de relaciones (Joins) respetando estrictamente las reglas del negocio para evitar duplicidad o pérdida de información.
 
+![Modelo Estrella](../Imagenes/Entidad_Relacion.jpg)
 ---
 
 ### 3. Optimización de Carga: Actualización Incremental
