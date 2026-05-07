@@ -25,6 +25,7 @@ La empresa no contaba con una estrategia de datos. La información residía en b
 * **Integridad Referencial:** Establecimiento de relaciones (Joins) respetando estrictamente las reglas del negocio para evitar duplicidad o pérdida de información.
 
 ![Modelo Estrella](../Imagenes/Entidad_Relacion.jpg)
+
 ---
 
 ### 3. Optimización de Carga: Actualización Incremental
