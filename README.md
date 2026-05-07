@@ -7,15 +7,15 @@ Bienvenido a mi repositorio de casos de estudio. Aquí documento implementacione
 ⚠️ Todo el contenido está anonimizado y no incluye información sensible.
 
 
-## 🧠 Alcance
-Este repositorio reúne experiencias prácticas, tanto componentes técnicos como funcionales, incluyendo:
-* Arquitectura de soluciones analíticas
-* Modelado de datos (Data Warehouse / Data Models)
-* ETL / ELT y pipelines de datos
-* Integraciones backend
-* Visualización y analítica en dashboards
-* Seguridad y control de acceso
-* Casos de uso orientados al negocio
+## 🧠 Alcance Técnico y Funcional
+Este repositorio cubre el ciclo de vida completo del dato, aplicando estándares de la industria financiera para garantizar soluciones robustas:
+
+* **Arquitectura & Estrategia:** Diseño de ecosistemas analíticos escalables alineados con los objetivos de negocio.
+* **Ingeniería de Datos (ETL/ELT):** Construcción de pipelines para la extracción y transformación de datos desde diversas fuentes (APIs, MySQL, BigQuery).
+* **Modelado Avanzado:** Implementación de estructuras **Data Warehouse** (Esquema Estrella) y modelos semánticos optimizados.
+* **Integración Backend:** Conexión fluida entre bases de datos transaccionales y capas analíticas mediante **APIs REST**.
+* **Visualización de Impacto:** Storytelling de datos mediante dashboards dinámicos que convierten métricas complejas en decisiones claras.
+* **Gobernanza & Seguridad:** Control de acceso riguroso mediante **Row-Level Security (RLS)** para asegurar la confidencialidad.
 
 
 ## 🧩 Casos de estudio
@@ -32,17 +32,30 @@ Este repositorio reúne experiencias prácticas, tanto componentes técnicos com
 (Iré agregando más casos progresivamente)
 
 
-## 🛠️ Tecnologías utilizadas
-      ✅ Power BI
-      ✅ MYSQL
-      ✅ Azure / Cloud
-      ✅ APIs REST
-      ✅ Data Modeling
-
+## 🛠️ Stack Tecnológico
+* Data Viz:
+     * ✅ Microsoft Power BI Desktop y Servicio Web
+     * ✅ Microsoft Powr BI Report Builder
+* Database:
+     * ✅ MySQL
+     * ✅ Google BigQuery
+* Lenguajes:
+     * ✅ Python 3.8
+     * ✅ Lenguaje de expresiones DAX
+     * ✅ Javascript & React
+* Cloud & Integración:
+     * ✅ Microsoft Power BI Gateway
+     * ✅ API REST Power BI
+     * ✅ Microsoft Azure Cloud Platform
+     * ✅ Google Cloud Platform
+* Arquitectura:
+     * ✅ Modelado Estrella
+     * ✅ ETL/ELT
+     * ✅ Row-Level Security (RLS)
+  
 
 ## 🎯 Objetivo
-Mostrar experiencia práctica en proyectos de datos, arquitectura analítica y generación de valor para el negocio, con un enfoque claro en entornos fintech.
-
+Demostrar la capacidad de transformar datos complejos en insights accionables para el negocio, garantizando siempre la integridad y seguridad de la información financiera.
 
 ## 📄 Licencia
 Este repositorio está bajo licencia<br>
