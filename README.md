@@ -6,6 +6,7 @@ Bienvenido a mi repositorio de casos de estudio. Aquí documento implementacione
 
 ⚠️ Todo el contenido está anonimizado y no incluye información sensible.
 
+---
 
 ## 🧠 Alcance Técnico y Funcional
 Este repositorio cubre el ciclo de vida completo del dato, aplicando estándares de la industria financiera para garantizar soluciones robustas:
@@ -17,6 +18,7 @@ Este repositorio cubre el ciclo de vida completo del dato, aplicando estándares
 * **Visualización de Impacto:** Storytelling de datos mediante dashboards dinámicos que convierten métricas complejas en decisiones claras.
 * **Gobernanza & Seguridad:** Control de acceso riguroso mediante **Row-Level Security (RLS)** para asegurar la confidencialidad.
 
+---
 
 ## 🚀 Proyectos Destacados
 
@@ -32,6 +34,7 @@ Este repositorio cubre el ciclo de vida completo del dato, aplicando estándares
 
 *(Iré agregando más casos progresivamente 🏗️)*
 
+---
 
 ## 🛠️ Stack Tecnológico
 * Data Viz:
@@ -53,15 +56,18 @@ Este repositorio cubre el ciclo de vida completo del dato, aplicando estándares
      * ✅ Modelado Estrella
      * ✅ ETL/ELT
      * ✅ Row-Level Security (RLS)
-  
+
+  ---
 
 ## 🎯 Objetivo
 Demostrar la capacidad de transformar datos complejos en insights accionables para el negocio, garantizando siempre la integridad y seguridad de la información financiera.
 
+---
 
 ## 📄 Licencia
 👉 Este repositorio está bajo la licencia [Creative Commons Attribution-NonCommercial 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
 
+---
 
 ## 👤 Autor<br>
 Keisy Gómez<br>
