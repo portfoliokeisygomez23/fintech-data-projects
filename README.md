@@ -32,7 +32,7 @@ Este repositorio cubre el ciclo de vida completo del dato, aplicando estándares
 * **Tech:** Power BI Embedded (SKU A3), Azure, API REST, JavaScript/React.
 * **Impacto:** Escalabilidad ilimitada para miles de usuarios y reducción del 90% en costos de licenciamiento mediante capacidad dedicada.
 
-### 3. [Data Pipeline & Auditoría Automatizada](./03_Auditoria_Mach)
+### 3. [Data Pipeline & Auditoría Automatizada](./03_Proyecto_Auditoria_Mach)
 *Automatización del proceso de conciliación bancaria mediante una arquitectura Serverless en la nube.*
 * **Tech:** Google Cloud Platform (BigQuery, GCS), Python, Google Apps Script.
 * **Impacto:** Reducción del 95% en tiempos de auditoría y procesamiento automático de +500k registros diarios.
