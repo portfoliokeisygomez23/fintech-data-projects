@@ -1,6 +1,7 @@
-# 📊 BI & Data Analytics Case Studies in Fintech
+# 📊 BI & Data Analytics in Fintech
 
-Repositorio de portfolio con casos reales de analítica y Business Intelligence en entornos fintech. Aquí documento implementaciones end-to-end, desde la ingesta de datos hasta la generación de insights para la toma de decisiones.<br>
+**Portfolio de Arquitectura y Soluciones de Datos**
+Bienvenido a mi repositorio de casos de estudio. Aquí documento implementaciones de Business Intelligence end-to-end, enfocadas en resolver retos críticos del sector financiero: escalabilidad, seguridad y toma de decisiones basada en datos.<br>
 ⚠️ Todo el contenido está anonimizado y no incluye información sensible.
 
 
