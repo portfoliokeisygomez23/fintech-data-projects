@@ -22,7 +22,7 @@ La empresa no contaba con una estrategia de datos. La información residía en b
 ### 2. Arquitectura y Modelado
 * **Diseño de la Arquitectura de Datos:** Implementación de un flujo híbrido que conecta la base de datos MySQL local con la nube de Power BI a través de un Gateway en un servidor dedicado.
 
-![Modelo Estrella](../Imagenes/Entidad_Relacion.jpg)
+![Arquitectura](../Imagenes/Arquitectura.jpg)
 
 * **Diseño de Modelo en Estrella:** Creación de un **Modelo Semántico** eficiente separando Tablas de Hechos (Facts) y Dimensiones (Dims).
 * **Optimización de Recursos:** Implementación de **Live Connection** para permitir que múltiples reportes consuman el mismo modelo. Esto garantiza la consistencia de las métricas (Única Fuente de Verdad) y reduce drásticamente el uso de almacenamiento y memoria.
