@@ -22,15 +22,21 @@ Este repositorio cubre el ciclo de vida completo del dato, aplicando estándares
 
 ## 🚀 Proyectos Destacados
 
-### 1. [Arquitectura BI Fintech](./01_Arquitectura_BI)
-*Implementación de un modelo semántico centralizado y dashboards operativos para el core del negocio.*
-* **Tech:** Microsoft Power BI, MySQL, Microsoft Power BI Gateway.
-* **Impacto:** Unificación de silos de datos y control de acceso granular por rol.
+### 1. [Arquitectura BI & Modernización de Datos](./01_Arquitectura_BI)
+*Diseño e implementación de una infraestructura de datos desde cero para un entorno Fintech local.*
+* **Tech:** Microsoft Power BI, MySQL On-Premises, Data Gateway.
+* **Impacto:** Eliminación de procesos manuales y creación de una "Única Fuente de Verdad" mediante un modelo semántico centralizado.
 
-### 2. [Compliance & Detección de Fraude](./02_Fraude_Compliance)
-*Sistema de monitoreo y alertas de transacciones sospechosas basado en reglas de negocio.*
-* **Tech:** Microsoft Power BI, MySQL, Data Modeling, DAX.
-* **Impacto:** Automatización de alertas críticas para la mitigación de riesgos financieros.
+### 2. [Analítica Embebida (Embedded) en Azure](./02_PowerBI_Embedded)
+*Integración de dashboards avanzados en una plataforma web nativa (React) para usuarios externos.*
+* **Tech:** Power BI Embedded (SKU A3), Azure, API REST, JavaScript/React.
+* **Impacto:** Escalabilidad ilimitada para miles de usuarios y reducción del 90% en costos de licenciamiento mediante capacidad dedicada.
+
+### 3. [Data Pipeline & Auditoría Automatizada](./03_Auditoria_Mach)
+*Automatización del proceso de conciliación bancaria mediante una arquitectura Serverless en la nube.*
+* **Tech:** Google Cloud Platform (BigQuery, GCS), Python, Google Apps Script.
+* **Impacto:** Reducción del 95% en tiempos de auditoría y procesamiento automático de +500k registros diarios.
+  
 
 *(Iré agregando más casos progresivamente 🏗️)*
 
