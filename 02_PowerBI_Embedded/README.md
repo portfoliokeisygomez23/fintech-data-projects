@@ -48,4 +48,6 @@ Actualmente, los reportes se encuentran en producción, operativa y consumida a 
 * Microsoft Power BI
 * Microsoft PowerBI Embedded
 * Azure Microsoft Entra ID
+* API Rest Power BI
+* Javascript & React
 
