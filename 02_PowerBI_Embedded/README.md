@@ -45,9 +45,7 @@ Actualmente, los reportes se encuentran en producción, operativa y consumida a 
 
 
 ## 🛠️ Tecnologías Utilizadas
-- Power BI Service
-- PowerBI Embedded
-- APIRest
-- Framework: React + JavaScript
-- Azure Microsoft Entra ID
+* Microsoft Power BI
+* Microsoft PowerBI Embedded
+* Azure Microsoft Entra ID
 
