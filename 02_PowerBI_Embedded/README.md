@@ -1,4 +1,4 @@
-# 📊 POWER BI Embedded - Capacity SKU A3 (Azure)
+# 📊 Case Study: POWER BI Embedded - Capacity SKU A3 (Azure)
 
 ## 🚨 Problemática 
 La solución operativa basada en licencias Power BI Pro presentaba restricciones críticas para el crecimiento del negocio:
