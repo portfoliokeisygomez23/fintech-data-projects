@@ -32,15 +32,21 @@ El flujo se apoya en tres componentes de control críticos:
 
 ---
 
-## 📊 Capa de Visualización & Business Intelligence
-El producto final es un centro de mando en Power BI que permite al equipo de Auditoría Interna actuar sobre las excepciones:
+## 📊 Estrategia de BI & Big Data (Capa de Visualización)
+El producto final es un ecosistema analítico en Power BI diseñado para el procesamiento eficiente de grandes volúmenes de datos alojados en **Google Cloud Platform**:
 
-* **Conciliación Automática (Matching):** Lógica DAX avanzada para el cruce masivo de registros de ambas fuentes, detectando coincidencias y discrepancias en segundos.
-* **Gestión de Excepciones:** Dashboards diseñados para resaltar "Deltas" o transacciones huérfanas, facilitando la rápida identificación de errores bancarios o de registro interno.
-* **Filtros Granulares & Exportación:** Capacidad de navegar desde la visión gerencial hasta el detalle transaccional, permitiendo descargar reportes específicos para procesos de aclaración.
-* **Monitoreo de Salud del Pipeline:** Visualización del estado de carga de los archivos procesados desde BigQuery para asegurar la frescura de los datos.
+* **Arquitectura de Alto Rendimiento:** Uso de conexión nativa y **vistas pre-procesadas** en BigQuery. Al delegar el procesamiento pesado al Data Warehouse, se garantiza fluidez extrema incluso con millones de registros.
+* **Modelo Híbrido Inteligente:** Implementación de un esquema de almacenamiento que combina **Import y DirectQuery**, equilibrando la velocidad de respuesta con la capacidad de consultar el histórico total sin latencia.
+* **Conciliación Automatizada (DAX):** Sustitución de la revisión manual por lógica de **Matching automático** en DAX, permitiendo el cruce instantáneo de transacciones entre la Fintech y el banco.
+* **Gestión por Excepción:** Diseño de interfaz enfocado exclusivamente en **Deltas (discrepancias)**; el sistema resalta automáticamente los errores, permitiendo que el auditor actúe solo donde es necesario.
 
+> ### 🚀 Valor Técnico del Enfoque
+> * **Seniority en BigQuery:** Optimización desde el origen para evitar reportes lentos.
+> * **Arquitectura Cloud:** Manejo experto de procesamiento híbrido para optimizar recursos.
+> * **Eficiencia de Negocio:** Transformación de una tarea de horas en una gestión de minutos basada en hallazgos.
+> * 
 
+![Arquitectura](../Imagenes/Diagrama_Mach.jpg)
 
 ---
 
