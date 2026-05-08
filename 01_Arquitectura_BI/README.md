@@ -1,4 +1,4 @@
-# Case Study: Implementación de Arquitectura BI desde Cero
+# 📊 Case Study: Implementación de Arquitectura BI desde Cero
 
 ## 📝 Resumen del Proyecto
 Este proyecto representa la transición de una gestión de datos inexistente hacia una infraestructura de **Business Intelligence profesional**. Se diseñó e implementó la arquitectura completa, permitiendo a la organización pasar de procesos manuales a una cultura *data-driven* con datos confiables y automatizados.
