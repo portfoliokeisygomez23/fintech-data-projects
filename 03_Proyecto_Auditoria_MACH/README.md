@@ -3,9 +3,13 @@
 ## 📝 Resumen del Proyecto
 Implementación de un pipeline de datos **end-to-end** para la conciliación automatizada entre los registros de Payku y el banco BCI-MACH. La solución migró un proceso manual propenso a errores hacia una arquitectura **Serverless en Google Cloud Platform (GCP)**.
 
+---
+
 ## 🚨 Problemática 
 * **Procesamiento Manual:** Validación de transacciones dependiente de intervención humana, generando alta latencia y riesgos de integridad.
 * **Falta de Trazabilidad:** Inexistencia de un histórico centralizado para auditorías retrospectivas o detección de desviaciones financieras en tiempo real.
+
+---
 
 ## 🛠️ Solución Implementada: Arquitectura Serverless
 Se diseñó un flujo de datos automatizado que garantiza la integridad mediante validaciones en cada etapa:
@@ -18,17 +22,35 @@ Se diseñó un flujo de datos automatizado que garantiza la integridad mediante 
 ## ✅ Arquitectura Implementada
 ![Arquitectura](../Imagenes/Diagrama_Mach.jpg)
 
+---
+
 ## 🚀 Pipeline de Datos: Gmail to BigQuery
 El flujo se apoya en tres componentes de control críticos:
 1. **Script 1 (Extraction):** Escaneo de hilos de Gmail y carga a GCS con verificación de existencia para evitar sobrescrituras. [Ver Script](../Scripts/FromGmailToStorage.py)
 2. **Script 2 (Load Job):** Ingesta automática a BigQuery con detección dinámica de esquemas. [Ver Script](../Scripts/FromStorageToBigQuery.py)
 3. **Notificaciones:** Sistema de alertas automáticas (éxito/error) vía email para monitorear el estado del pipeline.
 
+---
+
+## 📊 Capa de Visualización & Business Intelligence
+El producto final es un centro de mando en Power BI que permite al equipo de Auditoría Interna actuar sobre las excepciones:
+
+* **Conciliación Automática (Matching):** Lógica DAX avanzada para el cruce masivo de registros de ambas fuentes, detectando coincidencias y discrepancias en segundos.
+* **Gestión de Excepciones:** Dashboards diseñados para resaltar "Deltas" o transacciones huérfanas, facilitando la rápida identificación de errores bancarios o de registro interno.
+* **Filtros Granulares & Exportación:** Capacidad de navegar desde la visión gerencial hasta el detalle transaccional, permitiendo descargar reportes específicos para procesos de aclaración.
+* **Monitoreo de Salud del Pipeline:** Visualización del estado de carga de los archivos procesados desde BigQuery para asegurar la frescura de los datos.
+
+
+
+---
+
 ## 💡 Impacto y Beneficios Obtenidos
 * **Eficiencia Operativa:** Reducción del **95% en el tiempo de procesamiento**, pasando de horas de trabajo manual a una ejecución automática de minutos.
 * **Capacidad de Carga:** Procesamiento diario de **500,000+ registros** sin degradación de rendimiento.
 * **Optimización de Costos:** Arquitectura *Pay-as-you-go* con un costo operativo inferior a **$10 USD mensuales**.
 * **Confianza en la Auditoría:** Trazabilidad total (log de errores y duplicados), asegurando el **100% de integridad** en las conciliaciones diarias.
+
+---
 
 ## 🛠️ Tecnologías Utilizadas
 * **Cloud:** Google Cloud Platform (GCP), Cloud Storage, BigQuery.
