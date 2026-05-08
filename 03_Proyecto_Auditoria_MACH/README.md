@@ -26,8 +26,8 @@ Se diseñó un flujo de datos automatizado que garantiza la integridad mediante 
 
 ## 🚀 Pipeline de Datos: Gmail to BigQuery
 El flujo se apoya en tres componentes de control críticos:
-1. **Script 1 (Extraction):** Escaneo de hilos de Gmail y carga a GCS con verificación de existencia para evitar sobrescrituras. [Ver Script](../Scripts/FromGmailToStorage.py)
-2. **Script 2 (Load Job):** Ingesta automática a BigQuery con detección dinámica de esquemas. [Ver Script](../Scripts/FromStorageToBigQuery.py)
+1. **Script 1 (Extraction):** Escaneo de hilos de Gmail y carga a GCS con verificación de existencia para evitar sobrescrituras. [Ver Script1](../Scripts/FromGmailToStorage.py)
+2. **Script 2 (Load Job):** Ingesta automática a BigQuery con detección dinámica de esquemas. [Ver Script2](../Scripts/FromStorageToBigQuery.py)
 3. **Notificaciones:** Sistema de alertas automáticas (éxito/error) vía email para monitorear el estado del pipeline.
 
 ---
