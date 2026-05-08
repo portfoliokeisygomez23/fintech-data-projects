@@ -40,7 +40,7 @@ Dada la naturaleza transaccional del negocio Fintech, implementé una estrategia
 
 ### 4. Distribución y Democratización de Datos
 Para maximizar el valor del modelo semántico centralizado, se desplegó un ecosistema de visualización de alto impacto:
-* **Ecosistema de Reportes:** Creación de **30 dashboards especializados** que consumen el modelo único vía *Live Connection*, asegurando que todas las áreas consulten la misma información.
+* **Ecosistema de Reportes:** Creación de **15 dashboards especializados** que consumen el modelo único vía *Live Connection*, asegurando que todas las áreas consulten la misma información.
 * **Alcance Departamental:** Implementación de soluciones analíticas a medida para:
     * **Compliance:** Monitoreo de riesgos y cumplimiento normativo.
     * **Atención al Cliente:** KPIs de servicio, tiempos de respuesta y satisfacción.
