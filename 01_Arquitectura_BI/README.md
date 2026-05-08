@@ -48,6 +48,10 @@ Para maximizar el valor del modelo semántico centralizado, se desplegó un ecos
     * **Contabilidad & Gerencial:** Control financiero y visión estratégica de alto nivel.
     * **Operativos:** Seguimiento de procesos core en tiempo real.
 
+![Reporte1](../Imagenes/Reporte1.jpg)
+
+![Reporte2](../Imagenes/Reporte2.jpg)
+
 ---
 
 ## 5. 📊 Componentes Técnicos
