@@ -1,7 +1,7 @@
 # 📊 Case Study: Automatización de Auditoría Interna & Conciliación (Fintech-Bank)
 
 ## 📝 Resumen del Proyecto
-Implementación de un pipeline de datos **end-to-end** para la conciliación automatizada entre los registros de Payku y el banco BCI-MACH. La solución migró un proceso manual propenso a errores hacia una arquitectura **Serverless en Google Cloud Platform (GCP)**.
+Implementación de un pipeline de datos **end-to-end** para la conciliación automatizada entre los registros de Fintech y el banco BCI-MACH. La solución migró un proceso manual propenso a errores hacia una arquitectura **Serverless en Google Cloud Platform (GCP)**.
 
 ---
 
