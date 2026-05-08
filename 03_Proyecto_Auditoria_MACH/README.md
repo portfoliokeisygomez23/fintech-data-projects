@@ -44,9 +44,8 @@ El producto final es un ecosistema analítico en Power BI diseñado para el proc
 > * **Seniority en BigQuery:** Optimización desde el origen para evitar reportes lentos.
 > * **Arquitectura Cloud:** Manejo experto de procesamiento híbrido para optimizar recursos.
 > * **Eficiencia de Negocio:** Transformación de una tarea de horas en una gestión de minutos basada en hallazgos.
-> * 
 
-![Arquitectura](../Imagenes/Diagrama_Mach.jpg)
+![Reporte3](../Imagenes/Reporte3.jpg)
 
 ---
 
