@@ -23,6 +23,8 @@ En lugar de trabajar con la tabla plana original (que estresaba el modelo), se o
 * **Segmentación:** Se crearon dos consultas independientes apuntando al mismo origen: una especializada exclusivamente en **Ingresos** y otra en **Egresos**, aislando sus columnas correspondientes.
 * **Consolidación (Append):** Se ejecutó una operación de anexado (*Append*) para unificar ambas consultas en una **única tabla consolidada de hechos**, transformando el modelo horizontal en un modelo vertical óptimo para analítica.
 
+![Entidad](../Imagenes/Entidad_Relacion_Tributario.jpg)
+
 ### 2. Extracción de Datos Semi-Estructurados (Parsing en Power Query)
 Para abrir los arrays de PHP y extraer los valores tributarios sin recurrir a procesos pesados de backend, se implementaron funciones avanzadas de manipulación de texto en Power Query para delimitar y tipificar los campos ocultos en la columna `response_webservice`:
 
@@ -47,9 +49,13 @@ El reporte se estructuró estratégicamente en dos secciones clave para cubrir d
 * **Consolidado Mensual:** Matriz de control anualizada que desglosa mes a mes los flujos financieros de entrada y salida para cierres contables rápidos.
 * **Tendencia Temporal:** Gráfico de líneas que expone la evolución del monto emitido en el tiempo, identificando picos transaccionales o caídas anómalas en la operación.
 
+![Reporte1](../Imagenes/Reporte_Tributario1.jpg)
+
 ### 2. Página 2: Listado Maestro y Extracción de Datos
 * **Diseño Operativo:** Configuración de una tabla densa de detalles que expone folios, fechas, comercios y montos específicos.
 * **Optimización de Auditoría:** Diseñado especialmente para que el equipo de Contab ilidad aplique filtros cruzados y utilice la característica nativa de *Exportación de Datos a Excel*, agilizando los procesos de auditoría externa.
+
+![Reporte2](../Imagenes/Reporte_Tributario2.jpg)
 
 ---
 
