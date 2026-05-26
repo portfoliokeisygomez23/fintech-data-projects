@@ -69,6 +69,7 @@ El reporte se estructuró estratégicamente en dos secciones clave para cubrir d
 
 ## 🛠️ Tecnologías Utilizadas
 
+* **Database Source:** MySQL.
 * **BI Engine:** Power BI Desktop.
 * **Data Preparation:** Power Query (Lenguaje M avanzado para *parsing* y delimitación de texto).
 * **Lógica Semántica:** Expresiones DAX para la creación de medidas de cálculo, acumulados y tendencias temporales.
