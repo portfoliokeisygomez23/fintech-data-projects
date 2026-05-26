@@ -84,7 +84,7 @@ Para garantizar que el negocio cuente con información fresca al inicio de la jo
 
 * **Base de Datos Origen:** MySQL.
 * **BI Engine:** Power BI Desktop
-* **Conectividad:** On-Premise Data Gateway.
+* **Infraestructura:** On-Premise Data Gateway.
 * **Despliegue:** Power BI Service
 * **Data Preparation:** Power Query (Lenguaje M avanzado para *parsing* y delimitación de texto).
 * **Lógica Semántica:** Expresiones DAX para la creación de medidas de cálculo, acumulados y tendencias temporales.
