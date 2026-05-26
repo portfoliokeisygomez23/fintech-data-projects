@@ -32,7 +32,7 @@ Number.FromText(
     Text.BetweenDelimiters([response_webservice], "[folio] => ", "#(lf)")
 )
 
-Esta lógica se replicó para abrir campos clave como montos netos, IVA y tipos de documentos.
+Esta lógica se replicó para abrir campos clave como montos netos, IVA y tipos de documentos.```
 
 ---
 
