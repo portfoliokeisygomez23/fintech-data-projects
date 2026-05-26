@@ -1,7 +1,9 @@
 # 🧾 Análisis de Documentos Tributarios (Auditoría Electrónica al SII)
 
 ## 📝 Resumen del Proyecto
-Desarrollo de un ecosistema analítico en Power BI para el control, cruce y auditoría de documentos tributarios electrónicos (facturas, boletas, notas de crédito) enviados al **Servicio de Impuestos Internos (SII)**. El proyecto transforma logs de datos semiestructurados y registros planos en un tablero dinámico que permite monitorear montos totales, volúmenes de emisión y comportamiento transaccional (Ingresos vs. Egresos) por tipo de comercio.
+Desarrollo de un ecosistema analítico en Power BI para el control, cruce y auditoría de documentos tributarios electrónicos (facturas, boletas, notas de crédito) enviados al **Servicio de Impuestos Internos (SII)**. 
+
+El proyecto transforma logs de datos semiestructurados y registros planos en un tablero dinámico que permite monitorear montos totales, volúmenes de emisión y comportamiento transaccional (Ingresos vs. Egresos) por tipo de comercio.
 
 ## 🎯 El Reto Técnico
 El principal desafío de este proyecto radicaba en la compleja estructura de los datos en origen (provenientes de una única tabla transaccional), presentando las siguientes problemáticas:
