@@ -31,3 +31,37 @@ Para abrir los arrays de PHP y extraer los valores tributarios sin recurrir a pr
 Number.FromText(
     Text.BetweenDelimiters([response_webservice], "[folio] => ", "#(lf)")
 )
+
+Esta lógica se replicó para abrir campos clave como montos netos, IVA y tipos de documentos.
+
+---
+
+## 📊 Diseño del Dashboard y Capa de Visualización
+
+El reporte se estructuró estratégicamente en dos secciones clave para cubrir de forma eficiente las necesidades de los perfiles gerenciales y operativos:
+
+### 1. Página 1: Panel de Control y Análisis Macroeconómico
+* **KPIs Principales:** Tarjetas dinámicas con el acumulado del *Monto Total ($255.8M+)* y la cantidad neta de documentos emitidos con éxito al SII.
+* **Distribución de Mercado:** Gráfico de barras 100% apiladas que permite contrastar el comportamiento de movimientos de *PayIn* y *PayOut*, segmentado por tipo de comercio (Nacional vs. Internacional).
+* **Consolidado Mensual:** Matriz de control anualizada que desglosa mes a mes los flujos financieros de entrada y salida para cierres contables rápidos.
+* **Tendencia Temporal:** Gráfico de líneas que expone la evolución del monto emitido en el tiempo, identificando picos transaccionales o caídas anómalas en la operación.
+
+### 2. Página 2: Listado Maestro y Extracción de Datos
+* **Diseño Operativo:** Configuración de una tabla densa de detalles que expone folios, fechas, comercios y montos específicos.
+* **Optimización de Auditoría:** Diseñado especialmente para que el equipo de administración aplique filtros cruzados y utilice la característica nativa de *Exportación de Datos a Excel*, agilizando los procesos de auditoría externa.
+
+---
+
+## 💡 Impacto y Beneficios Obtenidos
+
+* **⚙️ Automatización del Proceso:** Se sustituyó por completo el parseo manual de *strings* y la separación horizontal de columnas que el equipo de operaciones realizaba en Excel, reduciendo el tiempo de preparación de datos de horas a cero.
+* **⚡ Performance del Reporte:** Al transformar la estructura original de tabla ancha en un modelo consolidado vertical, se optimizó el peso del modelo semántico, permitiendo transiciones de filtros e interacciones instantáneas.
+* **👤 Autonomía Operativa:** La inclusión de la segunda página (Listado Maestro) eliminó los cuellos de botella y las solicitudes de extracción de datos (*queries* a la base de datos) al equipo de TI, permitiendo que los usuarios de negocio se auto-atiendan.
+
+---
+
+## 🛠️ Tecnologías Utilizadas
+
+* **BI Engine:** Power BI Desktop.
+* **Data Preparation:** Power Query (Lenguaje M avanzado para *parsing* y delimitación de texto).
+* **Lógica Semántica:** Expresiones DAX para la creación de medidas de cálculo, acumulados y tendencias temporales.
