@@ -59,6 +59,19 @@ El reporte se estructuró estratégicamente en dos secciones clave para cubrir d
 
 ---
 
+## 🔄 Automatización y Despliegue (Power BI Service)
+
+Para garantizar que el negocio cuente con información fresca al inicio de la jornada laboral sin intervención manual, se configuró un flujo de actualización desatendido:
+
+1. **Configuración del Gateway:** * Se vinculó el origen de datos a una puerta de enlace corporativa en modo estándar (**On-Premise Data Gateway**).
+    * Esto permite establecer un puente de comunicación cifrado y seguro entre el servidor de base de datos local de la empresa y el servicio en la nube de Power BI.
+2. **Programación de Actualización Automática (Scheduled Refresh):**
+    * **Frecuencia:** Diaria.
+    * **Horario Fijo:** **9:00 AM** (Zona horaria local).
+    * **Optimización:** Al haber implementado la estrategia de unificación de tablas (*Append*) en la etapa de Power Query, el proceso de actualización en la nube toma pocos minutos, garantizando la disponibilidad del reporte sin impactar el rendimiento del servidor en horas pico.
+
+---
+
 ## 💡 Impacto y Beneficios Obtenidos
 
 * **⚙️ Automatización del Proceso:** Se sustituyó por completo el parseo manual de *strings* y la separación horizontal de columnas que el equipo de operaciones realizaba en Excel, reduciendo el tiempo de preparación de datos de horas a cero.
@@ -69,7 +82,9 @@ El reporte se estructuró estratégicamente en dos secciones clave para cubrir d
 
 ## 🛠️ Tecnologías Utilizadas
 
-* **Database Source:** MySQL.
-* **BI Engine:** Power BI Desktop.
+* **Base de Datos Origen:** MySQL.
+* **BI Engine:** Power BI Desktop
+* **Conectividad:** On-Premise Data Gateway.
+* **Despliegue:** Power BI Service
 * **Data Preparation:** Power Query (Lenguaje M avanzado para *parsing* y delimitación de texto).
 * **Lógica Semántica:** Expresiones DAX para la creación de medidas de cálculo, acumulados y tendencias temporales.
