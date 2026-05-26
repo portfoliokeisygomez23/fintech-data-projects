@@ -42,14 +42,14 @@ Esta lógica se replicó para extraer campos clave como montos netos, IVA, tipos
 El reporte se estructuró estratégicamente en dos secciones clave para cubrir de forma eficiente las necesidades de los perfiles gerenciales y operativos:
 
 ### 1. Página 1: Panel de Control y Análisis Macroeconómico
-* **KPIs Principales:** Tarjetas dinámicas con el acumulado del *Monto Total ($255.8M+)* y la cantidad neta de documentos emitidos con éxito al SII.
+* **KPIs Principales:** Tarjetas dinámicas con el acumulado del *Monto Total ($111.1M+)* y la cantidad neta de documentos emitidos con éxito al SII.
 * **Distribución de Mercado:** Gráfico de barras 100% apiladas que permite contrastar el comportamiento de movimientos de *PayIn* y *PayOut*, segmentado por tipo de comercio (Nacional vs. Internacional).
 * **Consolidado Mensual:** Matriz de control anualizada que desglosa mes a mes los flujos financieros de entrada y salida para cierres contables rápidos.
 * **Tendencia Temporal:** Gráfico de líneas que expone la evolución del monto emitido en el tiempo, identificando picos transaccionales o caídas anómalas en la operación.
 
 ### 2. Página 2: Listado Maestro y Extracción de Datos
 * **Diseño Operativo:** Configuración de una tabla densa de detalles que expone folios, fechas, comercios y montos específicos.
-* **Optimización de Auditoría:** Diseñado especialmente para que el equipo de administración aplique filtros cruzados y utilice la característica nativa de *Exportación de Datos a Excel*, agilizando los procesos de auditoría externa.
+* **Optimización de Auditoría:** Diseñado especialmente para que el equipo de Contab ilidad aplique filtros cruzados y utilice la característica nativa de *Exportación de Datos a Excel*, agilizando los procesos de auditoría externa.
 
 ---
 
