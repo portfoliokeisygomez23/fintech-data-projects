@@ -43,3 +43,4 @@ SUM(Core_Transacciones[Monto_Bruto]) - CALCULATE(SUM(Reporte_MACH[Monto_Transacc
 ```
 
 * **Gobernanza Automatizada:** Al estar acoplado al pipeline serverless en GCP (Gmail API $\rightarrow$ Cloud Storage $\rightarrow$ BigQuery), el modelo semántico garantiza consistencia absoluta, control de duplicados e integridad del 100% en las conciliaciones contables presentadas en la suite de la aplicación.
+* **Automatización de Hallazgos para Auditoría:** El dashboard resalta visualmente mediante alertas condicionales aquellas transacciones específicas que rompen las reglas del negocio financieros, permitiendo al auditor exportar el listado limpio de los "Deltas" en segundos.
