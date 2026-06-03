@@ -23,4 +23,6 @@ Este dashboard está diseñado para mitigar el riesgo financiero, identificar pa
 * **Lógica Analítica:** Agrupación e indexación de métricas de anulación discriminadas por ID de Cliente y Razón Social. Habilita al equipo de riesgo a detectar comercios con tasas de anulación inusualmente altas (*red flags* de fraude o problemas de integración técnica).
 * **Componentes UX:** Tasa de Variación por Cliente y por Monto, Tasa de Coincidencia de Conciliación, Monto Total en Discrepancia, Alertas.
 
+![Auditoria_Liquidaciones](../Imagenes/Auditoria_Liquidaciones.jpg)
+
 ---
