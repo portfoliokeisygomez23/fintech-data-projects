@@ -39,9 +39,3 @@ CALCULATE(
 
 ```
 
----
-
-## 🧠 Lógica DAX e Ingeniería Aplicada
-
-* **Cálculos de Balance Acumulado (Time Intelligence):** Implementación de lógicas DAX avanzadas sin afectar el rendimiento para calcular saldos acumulados en puntos específicos del tiempo (*Snapshot Tables*).
-* **Row-Level Security (RLS) Avanzado:** Enlace estricto del modelo con las dimensiones de seguridad para garantizar que los auditores solo accedan a los segmentos de cuentas de su respectiva competencia comercial.
