@@ -12,6 +12,8 @@ Este módulo especializado actúa como el motor de cuadratura para el proceso de
 * **Lógica Analítica:** Cruza directamente la tabla de *Liquidaciones* (el monto total transferido o depositado) contra la tabla de *Transacciones* (la suma de los cobros individuales que componen ese pago). El dashboard despliega el listado maestro de liquidaciones y, al seleccionar una de ellas, permite al auditor ver el desglose completo de las ventas asociadas, exponiendo de forma inmediata si existe alguna transacción aprobada que quedó fuera del flujo de pago o si se liquidó un monto sin respaldo transaccional.
 * **KPIs Core:** Total Fondos Liquidados, Volumen de Transacciones Asociadas, Tasa de Coincidencia de Lotes (Match Rate %), Monto Neto en Discrepancia.
 
+![Liquidacion](../Imagenes/Liquidacion.jpg)
+
 ---
 
 ## 🧠 Lógica DAX e Ingeniería Aplicada
