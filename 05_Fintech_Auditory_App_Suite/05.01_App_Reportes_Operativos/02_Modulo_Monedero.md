@@ -1,41 +1,20 @@
 # 💳 Módulo de Auditoría Monedero (Trazabilidad Contable)
 
 ## 📝 Descripción del Módulo
-Este módulo especializado audita el comportamiento, carga y consumo de los saldos mantenidos en las billeteras digitales internas (*Wallets*) de la plataforma. Su valor técnico radica en la implementación de un sistema de doble verificación temporal para asegurar el principio de integridad financiera: el balance de saldos no debe presentar descalces ni en el corte diario actual ni en la reconstrucción de la serie histórica.
+Este módulo especializado audita el comportamiento, carga y consumo de los saldos mantenidos en las billeteras digitales internas (*Wallets*) de la plataforma. Funciona como un libro mayor auxiliar que asegura la consistencia de los saldos a favor de los usuarios, separando la urgencia del monitoreo diario del análisis forense histórico.
 
 ---
 
 ## 🗂️ Estructura del Dashboard y Capas Analíticas
 
-El reporte está estructurado estratégicamente en **2 páginas de navegación** que se dividen de la siguiente manera:
-
-### Página 1: Consolidado del Día (Monitoreo de Alertas en Tiempo Real)
-* **Enfoque:** Diagnóstico de salud financiera inmediata al abrir el dashboard.
-* **Lógica Analítica:** Cruza los balances del Core de base de datos con los cierres de caja del día en curso. Aisla en una matriz de prioridad crítica cualquier cuenta o transacción que presente una discrepancia *hoy*, permitiendo al equipo de operaciones congelar saldos duplicados o corregir anomalías antes de los cierres contables del cierre de jornada.
+### Página 1: Consolidado del Día
+* **Enfoque:** Diagnóstico de salud financiera inmediata e identificación de descalces en tiempo real al abrir el dashboard.
+* **Lógica Analítica:** Cruza de forma automática los balances del Core de base de datos con los cierres de caja del día en curso. Permite al equipo de operaciones aislar al instante cualquier cuenta que presente discrepancias *hoy*, congelando saldos duplicados o corrigiendo anomalías de inmediato antes del cierre de jornada.
 * **KPIs Core:** Total Balance en Custodia Hoy, Alertas Activas de Descalce Diario, Monto Total en Discrepancia Actual, Número de Cuentas Virtuales Afectadas.
 
-### Página 2: Detalle por Periodo de Tiempo (Trazabilidad Histórica)
-* **Enfoque:** Consulta histórica flexible mediante selectores temporales dinámicos.
-* **Lógica Analítica:** Permite reconstruir la línea de tiempo de cualquier cuenta o de la plataforma global mediante la fórmula de continuidad contable: 
-  $$\text{Saldo Inicial} + \text{Abonos (Cash-In)} - \text{Cargos (Cash-Out)} = \text{Saldo Final}$$
-  Habilita al auditor a viajar al pasado para rastrear en qué fecha exacta se originó una discrepancia histórica y comprobar si ya fue saneada o si aún persiste en los libros auxiliares.
-* **Componentes UX:** Gráfico de líneas temporales para identificar tendencias de descalces y un buscador indexado por ID de Cliente para auditorías puntuales exhaustivas.
+### Página 2: Detalle por Periodo de Tiempo
+* **Enfoque:** Verificación del principio de integridad financiera mediante la reconstrucción histórica de saldos: $\text{Saldo Inicial} + \text{Abonos} - \text{Cargos} = \text{Saldo Final}$.
+* **Lógica Analítica:** Permite realizar consultas flexibles mediante selectores temporales dinámicos para viajar al pasado, rastrear en qué fecha exacta se originó un descalce histórico y comprobar de forma autónoma si la discrepancia persiste o si ya fue debidamente saneada.
+* **KPIs Core:** Volumen Histórico en Custodia, Suma de Abonos (Cash-In), Suma de Débitos (Cash-Out), Descalces de Balance Acumulado.
 
 ---
-
-## 🧠 Lógica DAX e Ingeniería Aplicada
-
-* **Cálculos de Balance Acumulado (Time Intelligence Avanzado):** Para evitar ralentizar el modelo en memoria con millones de registros de movimientos históricos, se implementaron medidas DAX optimizadas que calculan saldos en puntos específicos del tiempo de forma dinámica:
-
-```dax
-Saldo_Final_Historico = 
-CALCULATE(
-    SUM(Monedero[Monto_Movimiento]),
-    FILTER(
-        ALL('Dim_Calendario'),
-        'Dim_Calendario'[Fecha] <= MAX('Dim_Calendario'[Fecha])
-    )
-)
-
-```
-
