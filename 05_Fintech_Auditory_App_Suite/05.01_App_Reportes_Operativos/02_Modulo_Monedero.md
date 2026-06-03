@@ -38,3 +38,5 @@ CALCULATE(
 )
 
 ```
+
+* **Flags Dinámicos:** Se desarrollaron medidas lógicas en DAX que actúan como "motores de reglas" internos.
