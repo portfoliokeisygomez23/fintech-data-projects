@@ -21,4 +21,3 @@ Este módulo especializado audita el comportamiento, carga y consumo de los sald
 
 ![monedero_detalle](/Imagenes/monedero_detalle.jpg)
 
----
