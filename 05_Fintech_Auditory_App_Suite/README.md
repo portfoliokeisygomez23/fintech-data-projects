@@ -40,20 +40,7 @@ Para sostener este nivel de cruce multidimensional en memoria, el modelo semánt
 
 ```dax
 Monto_Discrepancia_Liquidacion = 
-SUM(Anulaciones[Monto]) - CALCULATE(SUM(Liquidaciones[Monto_Descontado]))
-
-
-
-### 2. Módulo de Auditoría de Liquidaciones
-* **Enfoque:** Control, conciliación y validación de los procesos de pago y dispersión de fondos hacia los comercios de la plataforma.
-
-### 3. Módulo de Auditoría Interna - Integración de Métodos de Pago Externos (Billeteras Digitales / Bancos)
-* **Enfoque:** Conciliación externa y cuadratura de flujos transaccionales contra integraciones clave del ecosistema financiero local (ej. adquirentes y métodos prepago alternativos).
-
-### 4. Módulo de Auditoría de Monedero
-* **Enfoque:** Balance y trazabilidad de los saldos mantenidos en las billeteras internas, previniendo discrepancias contables en el core financiero.
-
-![Menu](../Imagenes/menu_app.jpg)
+SUM(Anulaciones[Monto]) - CALCULATE(SUM(Liquidaciones[Monto_Descontado]))```
 
 ---
 
