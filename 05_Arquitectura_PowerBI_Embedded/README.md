@@ -5,8 +5,27 @@ Diseño e implementación de una arquitectura de analítica embebida de nivel em
 
 ---
 
-## 🎯 El Reto
-El desafío principal consistía en disponibilizar tableros analíticos a miles de usuarios externos sin requerir que cada uno contara con una licencia de Power BI, manteniendo el rendimiento de las consultas y asegurando que ningún cliente pudiera visualizar información de otro (Gobernanza y Seguridad).
+## 🎯 Objetivo
+Activación del servicio de PowerBI Embedded basada en la nube que permite:
+* Consumo de los reportes desde la App Payku sin necesidad de licencias individuales de Power BI Pro.
+* Garantizar seguridad de acceso a la información mediante RLS.
+* Optimizar costos mediante capacidad dedicada (SKU A3).
+* Generación de tokens de seguridad desde la Api Rest ilimitados.
+
+---
+
+## ✅ Solución Implementada
+Adquirir una capacidad dedicada Power BI Embedded A3 a través de Microsoft Azure, lo que permitirá:
+*	✔ Generación ilimitada de Embed Tokens
+*	✔ Uso de Service Principal para autenticación
+*	✔ Integración de reportes en aplicaciones web o sistemas internos
+*	✔ Escalabilidad según demanda
+
+---
+
+## ✅ Arquitectura Implementada
+
+![Arquitectura](../Imagenes/Arquitectura_Solucion.jpg)
 
 ---
 
