@@ -3,7 +3,7 @@
 ## 📝 Descripción de la Solución
 Esta documentación cubre el despliegue y empaquetamiento de la **Power BI App corporativa**, una solución analítica centralizada orientada al equipo de Control de Gestión, Riesgo y Auditoría Interna. 
 
-En lugar de distribuir reportes aislados, se implementó una **Aplicación en Power BI Service** que unifica los esfuerzos de fiscalización operativa y financiera en un único entorno seguro, optimizando la experiencia de usuario (UX) mediante una navegación integrada y organizada por módulos de control.
+En lugar de distribuir reportes aislados, se implementó una **Aplicación en Power BI Service** que unifica los esfuerzos de auditorías operativas y financieras en un único entorno seguro, optimizando la experiencia de usuario (UX) mediante una navegación integrada y organizada por módulos de control.
 
 ---
 
