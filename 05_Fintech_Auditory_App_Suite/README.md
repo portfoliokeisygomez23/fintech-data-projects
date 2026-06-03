@@ -35,8 +35,8 @@ La aplicación unifica el control financiero y operativo a través de 4 módulos
 
 Para sostener este nivel de cruce multidimensional en memoria, el modelo semántico implementó las siguientes estrategias:
 
-1. **Modelo Estrella de Conciliación:** Las tablas de hechos de *Anulaciones*, *Liquidaciones* y *Monedero* se relacionan indirectamente a través de dimensiones compartidas comunes (Dim_Cliente, Dim_Calendario y Dim_Transaccion_ID), evitando relaciones de muchos a muchos (*Many-to-Many*) que penalicen el rendimiento.
-2. **Medidas de Control Bidireccional (DAX):** Se parametrizaron cálculos avanzados para detectar diferencias decimales o descalces temporales entre registros:
+1. **Modelo Estrella de Conciliación:** Las tablas de hechos de *Anulaciones*, *Liquidaciones* y *Monedero* se relacionan indirectamente a través de dimensiones compartidas comunes (Dim_Cliente, Dim_Calendario y Dim_Transaccion_ID, etc.), evitando relaciones de muchos a muchos (*Many-to-Many*) que penalicen el rendimiento.
+2. **Medidas de Control Bidireccional (DAX):** Se parametrizaron cálculos avanzados en DAX para detectar diferencias decimales o descalces temporales entre registros:
 
 ```dax
 Monto_Discrepancia_Liquidacion = 
