@@ -30,3 +30,22 @@ Este dashboard está diseñado para mitigar el riesgo financiero, identificar pa
 ![Auditoria_Clientes](/Imagenes/Auditoria_Clientes.jpg)
 
 ---
+
+## 🧠 Lógica DAX e Ingeniería Aplicada
+
+Para sostener una conciliación cruzada de tres vías (*Anulaciones vs. Liquidaciones vs. Monedero*) sin penalizar el rendimiento del motor en memoria (VertiPaq), se implementaron las siguientes estrategias de modelado e ingeniería de variables:
+
+### 1. Arquitectura del Modelo de Datos (Esquema Estrella)
+* **Evitación de Relaciones Many-to-Many:** En lugar de conectar directamente las tablas de hechos entre sí, se diseñó un modelo estrella donde *Anulaciones*, *Liquidaciones* y *Monedero* se vinculan a través de dimensiones compartidas puras: `Dim_Cliente` (ID/Razón Social), `Dim_Calendario` (Fechas comunes) y una dimensión puente de `Dim_Transacciones` indexada por los IDs únicos operacionales.
+
+### 2. Medidas DAX de Conciliación Cruzada (Ejemplos Core)
+
+* **Cuadratura con Liquidaciones:** Métrica diseñada para validar que el monto total de la transacción anulada haya sido descontado con exactitud en los lotes de dispersión hacia el comercio:
+
+```dax
+Monto_Descalce_Anulacion_vs_Liquidacion = 
+SUM(Anulaciones[Monto_Anulado]) - CALCULATE(SUM(Liquidaciones[Monto_Descontado]))
+
+```
+
+* **Flags Dinámicos:** Se desarrollaron medidas lógicas en DAX que actúan como "motores de reglas" internos.
