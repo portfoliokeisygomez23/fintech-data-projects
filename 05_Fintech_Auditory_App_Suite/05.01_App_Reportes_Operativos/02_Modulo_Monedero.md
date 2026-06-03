@@ -36,3 +36,5 @@ CALCULATE(
         'Dim_Calendario'[Fecha] <= MAX('Dim_Calendario'[Fecha])
     )
 )
+
+```
