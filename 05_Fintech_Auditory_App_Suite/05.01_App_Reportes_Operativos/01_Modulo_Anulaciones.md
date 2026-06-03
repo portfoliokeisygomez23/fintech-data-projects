@@ -13,16 +13,20 @@ Este dashboard está diseñado para mitigar el riesgo financiero, identificar pa
 * **Lógica Analítica:** Cruce directo entre el maestro de transacciones revertidas y el módulo de liquidaciones. Permite identificar de forma proactiva si existen "fugas" de capital (ej. anulaciones aplicadas a nivel transaccional que por error de sistema continuaron en el flujo de pago hacia el cliente).
 * **KPIs Core:** Tasa de Coincidencia de Conciliación, Monto Total en Discrepancia, Alertas.
 
+![Auditoria_Liquidaciones](/Imagenes/Auditoria_Liquidaciones.jpg)
+
 #### Página 2: Conciliación Cruzada de Orígenes (Anulaciones vs. Monedero)
 * **Objetivo:** Validar la consistencia de los balances de saldo (*Wallets*) ante eventos de reversa.
 * **Lógica Analítica:** Compara la fecha y el monto estricto de la anulación contra los movimientos del monedero del usuario final o comercio. Certifica que el saldo disponible se actualice en tiempo real y con el monto exacto, evitando saldos negativos o duplicación de fondos tras un *chargeback* o cancelación.
 * **Visualizaciones:** Tasa de Coincidencia de Conciliación, Monto Total en Discrepancia, Alertas.
+
+![Auditoria_Monedero](/Imagenes/Auditoria_Monedero.jpg)
 
 #### Página 3: Análisis Granular por Comercio
 * **Objetivo:** Identificar concentraciones de riesgo, anomalías operativas y comportamientos inusuales a nivel de cuentas individuales.
 * **Lógica Analítica:** Agrupación e indexación de métricas de anulación discriminadas por ID de Cliente y Razón Social. Habilita al equipo de riesgo a detectar comercios con tasas de anulación inusualmente altas (*red flags* de fraude o problemas de integración técnica).
 * **Componentes UX:** Tasa de Variación por Cliente y por Monto, Tasa de Coincidencia de Conciliación, Monto Total en Discrepancia, Alertas.
 
-![Auditoria_Liquidaciones](/Imagenes/Auditoria_Liquidaciones.jpg)
+![Auditoria_Clientes](/Imagenes/Auditoria_Clientes.jpg)
 
 ---
