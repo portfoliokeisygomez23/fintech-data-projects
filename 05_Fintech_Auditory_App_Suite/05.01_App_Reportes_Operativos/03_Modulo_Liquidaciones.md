@@ -28,4 +28,4 @@ SUM(Liquidaciones[Monto_Liquidado_Cabecera]) - CALCULATE(SUM(Transacciones[Monto
 
 ```
 
-
+* **Filtros de Aislamiento de Discrepancias:** Implementación de lógicas DAX condicionales integradas en los segmentadores del panel. Esto permite al equipo de finanzas filtrar el dashboard con un solo clic para mostrar únicamente aquellos IDs de liquidación donde la métrica [Descalce_Monto_Liquidado] sea distinta de cero, optimizando los tiempos de revisión y agilizando la auditoría operativa.
