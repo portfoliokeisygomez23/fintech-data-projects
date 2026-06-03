@@ -26,6 +26,7 @@ El reporte está estructurado estratégicamente en **2 páginas de navegación**
 ## 🧠 Lógica DAX e Ingeniería Aplicada
 
 * **Cálculos de Balance Acumulado (Time Intelligence Avanzado):** Para evitar ralentizar el modelo en memoria con millones de registros de movimientos históricos, se implementaron medidas DAX optimizadas que calculan saldos en puntos específicos del tiempo de forma dinámica:
+
 ```dax
 Saldo_Final_Historico = 
 CALCULATE(
@@ -35,6 +36,8 @@ CALCULATE(
         'Dim_Calendario'[Fecha] <= MAX('Dim_Calendario'[Fecha])
     )
 )
+
+```
 
 ---
 
