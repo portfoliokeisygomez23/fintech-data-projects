@@ -7,19 +7,20 @@ Este módulo especializado actúa como el motor de cuadratura externa para los f
 
 ## 🗂️ Estructura del Dashboard y Capas Analíticas
 
-El diseño de la interfaz está optimizado para procesar grandes volúmenes de datos transaccionales, estructurándose en las siguientes lógicas de control:
+El diseño de la interfaz de usuario (UI/UX) está desarrollado para guiar al auditor desde una perspectiva macro (KPIs de negocio y descalces globales) hasta un nivel analítico granular (detalle registro por registro), dividiéndose en 2 páginas de navegación principales:
 
-### 1. Panel de Cuadratura y Tasa de Coincidencia (Match Rate)
-* **Enfoque:** Monitoreo analítico diario y control de semáforos para identificar discrepancias financieras entre ambas plataformas de forma inmediata.
-* **Lógica Analítica:** Cruza en paralelo los registros aprobados de la Fintech (alojados en BigQuery) contra las cartolas de liquidación enviadas por MACH. Clasifica de manera automática cada transacción en tres estados críticos de auditoría: 
-  * *Conciliadas:* Coincidencia exacta del identificador y monto.
-  * *Faltantes en Core:* Cobros ejecutados por MACH no impactados internamente.
-  * *Faltantes en Adquirente:* Ventas aprobadas en nuestra plataforma pero no liquidadas por el procesador externo.
-* **KPIs Core:** Tasa de Match (%), Monto Total Conciliado, Volumen en Descalce Financiero, Alertas de Transacciones Huérfanas.
+### Página 1: Monitor de KPIs - Conciliación Externa (Banco Adquirente vs. Fintech)
+* **Enfoque:** Panel de control ejecutivo y operacional que mapea el flujo del dinero y clasifica de manera inteligente los estados de cuadratura de las transacciones recaudadas.
+* **Lógica Analítica (Flujo Maestro):** Muestra un embudo comparativo directo de tres bloques: Total Recaudado por Adquirente Externo vs. Total Recaudado por la Fintech $\rightarrow$ derivando de forma automática en un bloque crítico de Inconsistencias / Diferencias (Diferencia de Monto y Diferencia en Cantidad de Transacciones).
+* **Segmentación Inteligente por Casuísticas:** Reemplaza la auditoría tradicional por un bloque de control enfocado en 4 escenarios operacionales con botones de navegación integrados (Click para ver detalle):
+  * **Casuística 1 (Efectiva/Efectiva):** Transacciones exitosas en el adquirente que se registraron correctamente como efectivas en el Core (Estatus = 1).
+  * **Casuística 2 (Alerta Crítica):** Transacciones efectivas en el adquirente que figuran como "No Procesadas" en el Core (Estatus = 0). Representa el principal indicador de reclamos de clientes.
+  * **Casuística 3 (Alerta de Riesgo):** Transacciones fallidas en el adquirente que por error de sincronización se registraron como efectivas (Estatus = 1) en el Core de la Fintech.
+  * **Casuística 4 (Consistente):** Transacciones fallidas en la Fintech que correctamente no registran abonos en el procesador externo.
 
-### 2. Gestión por Excepción y Deltas de Comisiones
-* **Enfoque:** Diagnóstico operativo y financiero enfocado exclusivamente en variaciones o discrepancias (*Deltas*).
-* **Lógica Analítica:** Desglosa los montos brutos e identifica desviaciones en la aplicación de tasas comerciales y comisiones. El sistema resalta automáticamente mediante alertas visuales aquellos registros con diferencias matemáticas, permitiendo al auditor ignorar los miles de registros correctos y actuar con foco únicamente donde existe un descalce.
+### Página 2: Detalle de Transacciones Cruzadas (Vista de Coincidencias)
+* **Enfoque:** Tabla espejo transaccional de alta densidad informativa para la validación forense de registros específicos.
+* **Lógica Analítica:** Una vez que el usuario filtra por un rango de fechas mediante el segmentador dinámico, la página despliega en paralelo dos grillas maestras: el Detalle de Transacciones del Adquirente (incluyendo fecha, identificador único, montos, comisiones y el flag de validación DAX) y, justo debajo, el Detalle de Transacciones de la Fintech con sus respectivos atributos de cliente, orden y concepto. Esto permite una auditoría visual inmediata y una exportación limpia de datos en caso de disputas.
 
 ---
 
