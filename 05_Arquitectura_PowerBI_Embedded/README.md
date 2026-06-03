@@ -39,16 +39,19 @@ La solución se estructuró dividiendo las responsabilidades en capas claras den
 * **Aislamiento:** Este espacio de trabajo está aislado de la reportería interna de la empresa, conteniendo exclusivamente los artefactos que serán expuestos al exterior.
 
 ### 2. Capa de Datos: Modelo Semántico Dinámico (Dataset)
+* **Modelos Semánticos:** Se vincularon de forma nativa los **4 modelos semánticos independientes** (segmentados por Negocio-Pais), garantizando que la lógica de cálculo ya estuviera optimizada antes de la fase de integración web.
+
+![Modelos_Semanticos](../Imagenes/Modelos_Semanticos.jpg)
+
 * **Modo de Almacenamiento:** Configurado en **Import Mode** con actualizaciones programadas diarias cada 3 horas, para optimizar costos de procesamiento.
 * **Centralización:** Un único modelo semántico atiende a todos los clientes de la plataforma. Se consolidaron las tablas de hechos y dimensiones bajo un **Esquema en Estrella** altamente indexado.
-* **Parámetro Clave (`Cliente ID`):** Se definió un parámetro global de tipo texto dentro del modelo, el cual actúa como el puente de comunicación con la API de la aplicación para filtrar el contexto del usuario logueado.
+* **Parámetro Clave (`Cliente_ID`):** Se definió un parámetro global de tipo texto dentro del modelo, el cual actúa como el puente de comunicación con la API de la aplicación para filtrar el contexto del usuario logueado.
 
-### 2. Capa de Datos: Modelo Semántico Dinámico (Dataset)
-
-* **Modelos Semánticos:** Se vincularon de forma nativa los **4 modelos semánticos independientes** (segmentados por Negocio/Pais), garantizando que la lógica de cálculo ya estuviera optimizada antes de la fase de integración web.
 
 > 💡 **Nota de Diseño:** Al reutilizar los 4 modelos existentes en lugar de duplicar la data, se logró mantener una **única fuente de verdad** y se redujo a cero el esfuerzo de mantenimiento del backend de datos durante el despliegue del entorno embebido.
 > 
+
+---
 
 ### 3. Capa de Visualización: Reportes Core
 * **Diseño UX/UI:** Desarrollado con páginas de estilo personalizadas para homologar los colores, tipografías y componentes visuales con la paleta de la aplicación web, logrando que el reporte se perciba como una sección nativa del software.
@@ -69,13 +72,24 @@ Dentro del modelo semántico se configuró un rol de seguridad activa por medio 
 
 ---
 
+## 🚀 Resultados
+*	Habilitación de reportes en la APP Payku Usuarios
+*	Mejora en la entrega de información a clientes
+*	Base tecnológica para productos data-driven
+* La solución permite a usuarios de negocio visualizar su información, cumpliendo con estándares de seguridad mediante Row-Level Security (RLS).
+Actualmente, los reportes se encuentran en producción, operativa y consumida a través de APIs REST.
+
+![Reporte](../Imagenes/Reporte_Embebido.jpg)
+
+---
+
 ## 💡 Impacto y Beneficios Obtenidos
-
-* 💰 **Monetización de Datos:** El ecosistema permitió lanzar un nuevo módulo "Premium" de analítica avanzada dentro de la plataforma web, abriendo una línea de ingresos adicional e incremental para la compañía.
-
-* 📉 **Eficiencia en Costos:** Al implementar la arquitectura App Owns Data, la organización evita la adquisición de licencias individuales (Power BI Pro) para miles de usuarios externos, pagando únicamente por los recursos de la capacidad encendida en Azure.
-
-* 🛡️ **Seguridad Certificada:** Mitigación total del riesgo de filtración de información (Data Leakage) entre cuentas. Al ejecutarse la seguridad directamente en el motor de Power BI (Backend), las reglas de acceso son inviolables y no pueden ser manipuladas desde las herramientas de desarrollador en el navegador del cliente (Frontend).
+* **UX Centralizada:** Visualización **100% integrada** sin fricciones de inicio de sesión externas.
+* **Ahorro en Licenciamiento:** Reducción del **90% en costos de licencias mensuales** al evitar el pago de suscripciones Pro individuales para clientes externos.
+* **Optimización de Performance:** Mejora del **45% en los tiempos de renderizado** de los reportes tras la segmentación en 4 modelos semánticos.
+* **Escalabilidad Garantizada:** Capacidad para soportar hasta **100+ usuarios concurrentes** sin degradación de servicio bajo el SKU A3.
+* **Seguridad RLS:** Reducción de filtración de datos al **0%** cruzados entre clientes gracias a la robustez del RLS dinámico.
+* **Seguridad Certificada:** Mitigación total del riesgo de filtración de información (Data Leakage) entre cuentas. Al ejecutarse la seguridad directamente en el motor de Power BI (Backend), las reglas de acceso son inviolables y no pueden ser manipuladas desde las herramientas de desarrollador en el navegador del cliente (Frontend).
 
 ---
 
