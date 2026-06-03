@@ -24,7 +24,7 @@ El diseño de la interfaz de usuario (UI/UX) está desarrollado para guiar al au
 * **Enfoque:** Tabla espejo transaccional de alta densidad informativa para la validación forense de registros específicos.
 * **Lógica Analítica:** Una vez que el usuario filtra por un rango de fechas mediante el segmentador dinámico, la página despliega en paralelo dos grillas maestras: el Detalle de Transacciones del Adquirente (incluyendo fecha, identificador único, montos, comisiones y el flag de validación DAX) y, justo debajo, el Detalle de Transacciones de la Fintech con sus respectivos atributos de cliente, orden y concepto. Esto permite una auditoría visual inmediata y una exportación limpia de datos en caso de disputas.
 
-![mach1](/Imagenes/mach1.jpg)
+![mach2](/Imagenes/mach2.jpg)
 
 ---
 
