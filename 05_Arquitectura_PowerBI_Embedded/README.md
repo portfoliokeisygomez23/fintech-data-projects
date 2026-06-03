@@ -83,7 +83,7 @@ Dentro del modelo semántico se configuró un rol de seguridad activa por medio 
 * La solución permite a usuarios de negocio visualizar su información, cumpliendo con estándares de seguridad mediante Row-Level Security (RLS).
 Actualmente, los reportes se encuentran en producción, operativa y consumida a través de APIs REST.
 
-![Reporte](./Imagenes/Reporte_Embebido.jpg)
+![Reporte](../Imagenes/Reporte_Embebido.jpg)
 
 ---
 
