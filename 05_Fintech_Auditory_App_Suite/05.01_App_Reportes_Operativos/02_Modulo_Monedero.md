@@ -1,4 +1,4 @@
-# 💳 Módulo de Monedero (Trazabilidad Contable)
+# 💳 Módulo de Auditoría Monedero (Trazabilidad Contable)
 
 ## 📝 Descripción del Módulo
 Este módulo especializado audita el comportamiento, carga y consumo de los saldos mantenidos en las billeteras digitales internas (*Wallets*) de la plataforma. Su valor técnico radica en la implementación de un sistema de doble verificación temporal para asegurar el principio de integridad financiera: el balance de saldos no debe presentar descalces ni en el corte diario actual ni en la reconstrucción de la serie histórica.
