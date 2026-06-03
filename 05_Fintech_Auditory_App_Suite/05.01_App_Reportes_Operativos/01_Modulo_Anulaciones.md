@@ -1,6 +1,6 @@
+# 💳 Módulo de Auditoría de Anulaciones
 
-
-### 📊 1. Módulo de Auditoría de Anulaciones
+## 📝 Descripción del Módulo
 
 Este dashboard está diseñado para mitigar el riesgo financiero, identificar patrones de fraude y asegurar que cada transacción reversada se refleje de manera consistente en todo el ecosistema contable. Su valor técnico radica en la conciliación cruzada de tres orígenes de datos críticos, distribuidos en **3 páginas especializadas de navegación**:
 
