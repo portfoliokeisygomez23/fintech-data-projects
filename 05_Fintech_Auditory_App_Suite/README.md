@@ -16,7 +16,7 @@ En lugar de distribuir reportes aislados, se implementó una **Aplicación en Po
 
 ## 🗺️ Estructura de Navegación y Reportes Incluidos
 
-Como se detalla en el menú maestro de la aplicación (ver `image_945ca6.png`), la suite está segmentada en 4 módulos analíticos críticos de alta densidad informativa:
+Como se detalla en el menú maestro de la aplicación, la suite está segmentada en 4 módulos analíticos críticos de alta densidad informativa:
 
 ### 1. Modulo de Auditoría de Anulaciones
 * **Enfoque:** Monitoreo preventivo y reactivo de transacciones reversadas, anuladas o sujetas a *chargebacks*.
@@ -30,9 +30,11 @@ Como se detalla en el menú maestro de la aplicación (ver `image_945ca6.png`), 
 ### 4. Módulo de Auditoría de Monedero / Cuenta Virtual
 * **Enfoque:** Balance y trazabilidad de los saldos mantenidos en las billeteras internas, previniendo discrepancias contables en el core financiero.
 
+![Menu](../Imagenes/menu_app.jpg)
+
 ---
 
 ## 🔄 Despliegue y Ciclo de Vida de la App
-* **Frecuencia de Actualización:** Sincronizada con los pipelines automáticos individuales de cada modelo subyacente.
-* **Audiencia y Permisos:** Restringida mediante Grupos de Seguridad de Azure AD a los roles de Auditoría Interna, Finanzas y C-Level.
-* **Mantenimiento:** El desarrollo se realiza de forma aislada en el Workspace de desarrollo/producción. Los cambios impactan a los usuarios finales únicamente al presionar **"Actualizar Aplicación"**, garantizando un ambiente en producción libre de interrupciones o pruebas en vivo.
+* **Frecuencia de Actualización:** Sincronizada con las actualizaciones automáticas individuales de cada modelo semánticos (Datasets).
+* **Audiencia y Permisos:** Restringida sólo para la licencia Power BI correspondiente al Administrador. (Se evalúa comprar una licencia nueva para el area de Riesgo y Auditoría Interna)
+* **Mantenimiento:** Los cambios impactan en la app y a los usuarios finales únicamente al presionar **"Actualizar Aplicación"**, garantizando un ambiente en producción libre de interrupciones o pruebas en vivo.
