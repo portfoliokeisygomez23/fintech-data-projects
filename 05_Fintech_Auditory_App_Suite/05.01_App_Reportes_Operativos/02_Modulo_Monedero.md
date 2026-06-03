@@ -12,9 +12,13 @@ Este módulo especializado audita el comportamiento, carga y consumo de los sald
 * **Lógica Analítica:** Cruza de forma automática los balances del Core de base de datos con los cierres de caja del día en curso. Permite al equipo de operaciones aislar al instante cualquier cuenta que presente discrepancias *hoy*, congelando saldos duplicados o corrigiendo anomalías de inmediato antes del cierre de jornada.
 * **KPIs Core:** Total Balance en Custodia Hoy, Alertas Activas de Descalce Diario, Monto Total en Discrepancia Actual, Número de Cuentas Virtuales Afectadas.
 
+![monedero_consolidado](/Imagenes/monedero_consolidado.jpg)
+
 ### Página 2: Detalle por Periodo de Tiempo
 * **Enfoque:** Verificación del principio de integridad financiera mediante la reconstrucción histórica de saldos: $\text{Saldo Inicial} + \text{Abonos} - \text{Cargos} = \text{Saldo Final}$.
 * **Lógica Analítica:** Permite realizar consultas flexibles mediante selectores temporales dinámicos para viajar al pasado, rastrear en qué fecha exacta se originó un descalce histórico y comprobar de forma autónoma si la discrepancia persiste o si ya fue debidamente saneada.
 * **KPIs Core:** Volumen Histórico en Custodia, Suma de Abonos (Cash-In), Suma de Débitos (Cash-Out), Descalces de Balance Acumulado.
+
+![monedero_detalle](/Imagenes/monedero_detalle.jpg)
 
 ---
