@@ -1,11 +1,13 @@
 # 🌐 Arquitectura de Analítica Embebida: Integración con Power BI Embedded
 
 ## 📝 Resumen del Proyecto
+
 Diseño e implementación de una arquitectura de analítica embebida de nivel empresarial para integrar tableros de control directamente en el portal web de la empresa (Frontend en **React**). La solución transforma reportes internos en un producto analítico orientado al cliente final (*Customer-Facing Analytics*), utilizando la **API REST de Power BI** para una carga fluida y garantizando un aislamiento estricto de los datos mediante un modelo multi-inquilino (*Multi-tenancy*).
 
 ---
 
 ## 🎯 Objetivo
+
 Activación del servicio de PowerBI Embedded basada en la nube que permite:
 * Consumo de los reportes desde la App Payku sin necesidad de licencias individuales de Power BI Pro.
 * Garantizar seguridad de acceso a la información mediante RLS.
@@ -15,6 +17,7 @@ Activación del servicio de PowerBI Embedded basada en la nube que permite:
 ---
 
 ## ✅ Solución Implementada
+
 Adquirir una capacidad dedicada Power BI Embedded A3 a través de Microsoft Azure, lo que permitirá:
 *	✔ Generación ilimitada de Embed Tokens
 *	✔ Uso de Service Principal para autenticación
@@ -34,15 +37,14 @@ Adquirir una capacidad dedicada Power BI Embedded A3 a través de Microsoft Azur
 La solución se estructuró dividiendo las responsabilidades en capas claras dentro de Power BI Service y el backend de la aplicación:
 
 ### 1. Capa de Contenedores: Workspace Dedicado
+
 * **Creación de Workspace** 
 * **Tipo de Capacidad:** Alojado en una capacidad dedicada de Azure (**Power BI Embedded Capacidad A3-Sku**) para permitir el consumo ilimitado de usuarios anonimizados mediante el esquema *App Owns Data* (La aplicación posee los datos).
 * **Aislamiento:** Este espacio de trabajo está aislado de la reportería interna de la empresa, conteniendo exclusivamente los artefactos que serán expuestos al exterior.
 
 ### 2. Capa de Datos: Modelo Semántico Dinámico (Dataset)
+
 * **Modelos Semánticos:** Se vincularon de forma nativa los **4 modelos semánticos independientes** (segmentados por Negocio-Pais), garantizando que la lógica de cálculo ya estuviera optimizada antes de la fase de integración web.
-
-![Modelos_Semanticos](../Imagenes/Modelos_Semanticos.jpg)
-
 * **Modo de Almacenamiento:** Configurado en **Import Mode** con actualizaciones programadas diarias cada 3 horas, para optimizar costos de procesamiento.
 * **Centralización:** Un único modelo semántico atiende a todos los clientes de la plataforma. Se consolidaron las tablas de hechos y dimensiones bajo un **Esquema en Estrella** altamente indexado.
 * **Parámetro Clave (`Cliente_ID`):** Se definió un parámetro global de tipo texto dentro del modelo, el cual actúa como el puente de comunicación con la API de la aplicación para filtrar el contexto del usuario logueado.
@@ -54,6 +56,7 @@ La solución se estructuró dividiendo las responsabilidades en capas claras den
 ---
 
 ### 3. Capa de Visualización: Reportes Core
+
 * **Diseño UX/UI:** Desarrollado con páginas de estilo personalizadas para homologar los colores, tipografías y componentes visuales con la paleta de la aplicación web, logrando que el reporte se perciba como una sección nativa del software.
 * **Navegación:** Se deshabilitaron las barras de navegación nativas de Power BI, delegando los filtros y el cambio de pestañas a botones personalizados embebidos en el frontend.
 
@@ -73,6 +76,7 @@ Dentro del modelo semántico se configuró un rol de seguridad activa por medio 
 ---
 
 ## 🚀 Resultados
+
 *	Habilitación de reportes en la APP Payku Usuarios
 *	Mejora en la entrega de información a clientes
 *	Base tecnológica para productos data-driven
@@ -84,6 +88,7 @@ Actualmente, los reportes se encuentran en producción, operativa y consumida a 
 ---
 
 ## 💡 Impacto y Beneficios Obtenidos
+
 * **UX Centralizada:** Visualización **100% integrada** sin fricciones de inicio de sesión externas.
 * **Ahorro en Licenciamiento:** Reducción del **90% en costos de licencias mensuales** al evitar el pago de suscripciones Pro individuales para clientes externos.
 * **Optimización de Performance:** Mejora del **45% en los tiempos de renderizado** de los reportes tras la segmentación en 4 modelos semánticos.
