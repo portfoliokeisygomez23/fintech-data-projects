@@ -8,39 +8,27 @@ En lugar de distribuir reportes aislados, se implementó una **Aplicación en Po
 ---
 
 ## 🎯 Objetivos de la Aplicación (Gobernanza y UX)
+
 * **Experiencia de Usuario Unificada:** Centralización de múltiples necesidades de auditoría bajo una misma interfaz de navegación vertical y colapsable (según se observa en la arquitectura de navegación de la suite).
 * **Control de Accesos:** Distribución controlada a audiencias específicas dentro de la organización sin comprometer los permisos de edición del espacio de trabajo (*Workspace*).
 * **Consistencia del Dato:** Todos los dashboards incluidos consumen modelos semánticos con actualización automatizada, garantizando que el equipo de auditoría trabaje siempre sobre la misma versión de la verdad.
 
 ---
 
-## 🗺️ Estructura de Navegación y Reportes Incluidos
+## 🗺️ Módulos Analíticos e Interfaz de la Suite
 
-Como se detalla en el menú maestro de la aplicación, la suite está segmentada en 4 módulos analíticos críticos de alta densidad informativa:
+La aplicación unifica el control financiero y operativo a través de 4 módulos especializados, diseñados con un enfoque de conciliación multidimensional y alertas necesarias para el análisis:
 
-### 📊 1. Módulo de Auditoría de Anulaciones
+![Menu](../Imagenes/menu_app.jpg)
 
-Este dashboard está diseñado para mitigar el riesgo financiero, identificar patrones de fraude y asegurar que cada transacción reversada se refleje de manera consistente en todo el ecosistema contable. Su valor técnico radica en la conciliación cruzada de tres orígenes de datos críticos, distribuidos en **3 páginas especializadas de navegación**:
-
----
-
-### 🗂️ Estructura del Dashboard (Navegación en 3 Páginas)
-
-#### Página 1: Conciliación Cruzada de Orígenes (Anulaciones vs. Liquidaciones)
-* **Objetivo:** Asegurar que cada anulación procesada haya sido correctamente descontada del flujo de dispersión de fondos del comercio.
-* **Lógica Analítica:** Cruce directo entre el maestro de transacciones revertidas y el módulo de liquidaciones. Permite identificar de forma proactiva si existen "fugas" de capital (ej. anulaciones aplicadas a nivel transaccional que por error de sistema continuaron en el flujo de pago hacia el cliente).
-* **KPIs Core:** Tasa de Coincidencia de Conciliación, Monto Total en Discrepancia, Alertas.
-
-#### Página 2: Conciliación Cruzada de Orígenes (Anulaciones vs. Monedero)
-* **Objetivo:** Validar la consistencia de los balances de saldo (*Wallets*) ante eventos de reversa.
-* **Lógica Analítica:** Compara la fecha y el monto estricto de la anulación contra los movimientos del monedero del usuario final o comercio. Certifica que el saldo disponible se actualice en tiempo real y con el monto exacto, evitando saldos negativos o duplicación de fondos tras un *chargeback* o cancelación.
-* **Visualizaciones:** Tasa de Coincidencia de Conciliación, Monto Total en Discrepancia, Alertas.
-
-#### Página 3: Análisis Granular por Comercio
-* **Objetivo:** Identificar concentraciones de riesgo, anomalías operativas y comportamientos inusuales a nivel de cuentas individuales.
-* **Lógica Analítica:** Agrupación e indexación de métricas de anulación discriminadas por ID de Cliente y Razón Social. Habilita al equipo de riesgo a detectar comercios con tasas de anulación inusualmente altas (*red flags* de fraude o problemas de integración técnica).
-* **Componentes UX:** Tasa de Variación por Cliente y por Monto, Tasa de Coincidencia de Conciliación, Monto Total en Discrepancia, Alertas.
-
+* **🚀 Módulo de Anulaciones (Mitigación de Riesgo):** Centraliza y audita las transacciones reversadas mediante un modelo de conciliación cruzada de tres vías (*Anulaciones vs. Liquidaciones vs. Monedero*). Su objetivo principal es detectar fugas de capital y automatizar las alertas por descalces en las cuentas de los comercios.
+  
+* **💰 Módulo de Liquidaciones (Gobernanza de Fondos):** Dedicado al control, tracking y validación del flujo de dispersión de capital hacia los comercios. Asegura la trazabilidad de los montos netos a pagar, comisiones descontadas y cumplimiento de los plazos de pago (*payouts*).
+  
+* **🔌 Módulo de Integración de Pagos (Conciliación Externa con Banco Emisor):** Realiza la cuadratura y validación de las transacciones procesadas contra los reportes de adquirentes externos, redes bancarias y billeteras digitales. Diseñado para identificar discrepancias en las pasarelas de pago de forma oportuna.
+  
+* **💳 Módulo de Monedero (Trazabilidad Contable):** Audita el comportamiento y balance de los saldos internos integrados en la plataforma. Su enfoque garantiza la consistencia del pasivo financiero de la empresa, evitando duplicidad de fondos o saldos negativos colaterales.
+  
 ---
 
 ### 🧠 Ingeniería de Datos y Lógica DAX Aplicada
