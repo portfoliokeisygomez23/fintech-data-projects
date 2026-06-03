@@ -34,3 +34,7 @@ Para sostener este nivel de procesamiento con cargas superiores a los **500,000 
 ```dax
 Diferencia_Conciliacion_MACH = 
 SUM(Core_Transacciones[Monto_Bruto]) - CALCULATE(SUM(Reporte_MACH[Monto_Transaccion]))
+
+```
+
+* **Gobernanza Automatizada:** Al estar acoplado al pipeline serverless en GCP (Gmail API $\rightarrow$ Cloud Storage $\rightarrow$ BigQuery), el modelo semántico garantiza consistencia absoluta, control de duplicados e integridad del 100% en las conciliaciones contables presentadas en la suite de la aplicación.
