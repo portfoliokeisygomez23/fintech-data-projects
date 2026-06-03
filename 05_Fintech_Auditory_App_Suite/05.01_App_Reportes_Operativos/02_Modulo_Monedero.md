@@ -15,7 +15,7 @@ Este módulo especializado audita de forma interna el comportamiento, carga y co
 ![monedero_consolidado](/Imagenes/monedero_consolidado.jpg)
 
 ### Página 2: Detalle por Periodo de Tiempo
-* **Enfoque:** Verificación del principio de continuidad contable y auditoría forense mediante la reconstrucción de la serie de tiempo: $\text{Balance Anterior} + \text{Ingreso} - \text{Egreso} = \text{Balance Actual}$.
+* **Enfoque:** Verificación del principio de continuidad contable y auditoría mediante la reconstrucción de la serie de tiempo: $\text{Balance Anterior} + \text{Ingreso} - \text{Egreso} = \text{Balance Actual}$.
 * **Lógica Analítica:** Permite realizar consultas flexibles mediante selectores temporales dinámicos para viajar al pasado y evaluar si históricamente el flujo de ingresos y egresos impactó correctamente el saldo acumulado. Habilita al auditor a detectar la fecha exacta en la que un movimiento rompió la secuencia lógica del saldo para identificar errores de sistema o alteraciones.
 * **KPIs Core:** Volumen Histórico en Custodia, Suma de Ingresos, Suma de Egresos, Descalces de Balance Acumulado.
 
