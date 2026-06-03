@@ -40,7 +40,9 @@ Para sostener este nivel de cruce multidimensional en memoria, el modelo semánt
 
 ```dax
 Monto_Discrepancia_Liquidacion = 
-SUM(Anulaciones[Monto]) - CALCULATE(SUM(Liquidaciones[Monto_Descontado]))```
+SUM(Anulaciones[Monto]) - CALCULATE(SUM(Liquidaciones[Monto_Descontado]))
+
+```
 
 ---
 
