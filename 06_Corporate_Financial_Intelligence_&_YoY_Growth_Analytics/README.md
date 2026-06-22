@@ -50,21 +50,80 @@ TotalMontoTotalAñoAnterior = CALCULATE(sum(Transacciones[montofinal]), SAMEPERI
 ### 2. Fórmulas de Variación y Porcentajes de Crecimiento (YoY)
 * **Desviación Porcentual del Monto Transaccionado:**
 ```dax
-// COMPLETAR: Insertar aquí la fórmula DAX para el cálculo de porcentaje de variación del volumen transaccionado
+Fórmula DAX para el cálculo de porcentaje de variación del volumen transaccionado:
+% VariacionTransacciones = DIVIDE(
+        [TransaccionAñoActual],[TransaccionAñoAnterior], 0
+    )
 ```
+
+* **Desviación Porcentual del Monto Transaccionado con Check de Alerta Fraude:**
+```dax
+Fórmula DAX para el cálculo de porcentaje de variación del volumen transaccionado con check fraude:
+%VariacionTotalFraude = 
+VAR PorcentajeFila = 
+DIVIDE(
+        count(Transacciones[check_fraude]) - [CantCheckFraudeAñoAnterior], [CantCheckFraudeAñoAnterior]
+    )
+
+VAR PromedioFilasVisibles = 
+    AVERAGEX(
+        SUMMARIZE(
+            Calendario, 
+            Calendario[Month], 
+            "@Porcentaje", DIVIDE(
+        count(Transacciones[check_fraude]) - [CantCheckFraudeAñoAnterior], [CantCheckFraudeAñoAnterior]
+    )
+        ),
+        [@Porcentaje]
+    )
+
+RETURN
+    IF(
+        ISINSCOPE(Calendario[Month]), 
+        PorcentajeFila, 
+        PromedioFilasVisibles
+    )
+```
+
 
 * **Tasa de Crecimiento Anual de Comisiones (KPI Principal):**
 ```dax
-// COMPLETAR: Insertar aquí la fórmula DAX que determina el crecimiento porcentual de comisiones YoY
+Fórmula DAX que determina el crecimiento porcentual de comisiones YoY:
+CAGR = 
+    IF(
+       [TotalComisionAñoAnterior] > 0, 
+        (sum(Transacciones[comision]) / [TotalComisionAñoAnterior]) ^ (1 / 2) - 1, 
+        BLANK()
+    )
+```
+
+* **Tasa de Crecimiento Mensual de Comisiones (KPI Principal):**
+```dax
+Fórmula DAX que determina el crecimiento porcentual de comisiones MoM:
+CrecimientoMoM = 
+    DIVIDE(
+        sum(Transacciones[comision]) - [TotalComisionAñoAnterior], 
+        [TotalComisionAñoAnterior]
+    )
 ```
 
 ### 3. Lógicas del Promedio y Desglose por Canal
 * **Cálculo del Ticket Promedio Mensual:**
 ```dax
-// COMPLETAR: Insertar aquí la fórmula DAX empleada para el promedio del monto transaccionado
+Fórmula DAX empleada para el promedio del monto transaccionado:
+PromedioMontoAñoAnterior = CALCULATE(AVERAGE(Transacciones[monto]), SAMEPERIODLASTYEAR(Calendario[Date]))
 ```
 
 * **Participación Proporcional del Método de Pago:**
 ```dax
-// COMPLETAR: Insertar aquí la fórmula DAX que calcula el porcentaje de distribución por pasarela de pago
+Fórmula DAX que calcula el porcentaje de distribución por metodo de pago:
+% Distribución Metodo = 
+DIVIDE(
+    Transacciones[monto], 
+    CALCULATE(
+        Transacciones[monto], 
+        ALL(Metodo[Metodo_id])
+    ),
+    0
+)
 ```
