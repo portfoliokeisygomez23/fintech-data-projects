@@ -39,3 +39,20 @@ Para sostener el dinamismo temporal y las comparaciones cruzadas de años, se im
 * **Monto Transaccionado del Año Anterior (LY):**
 ```dax
 // COMPLETAR: Insertar aquí la fórmula DAX utilizada para calcular el monto transaccionado del año anterior
+
+* **Comisión Acumulada del Año Anterior (LY):**
+// COMPLETAR: Insertar aquí la fórmula DAX utilizada para calcular la comisión acumulada del año anterior
+
+### 2. Fórmulas de Variación y Porcentajes de Crecimiento (YoY)
+* **Desviación Porcentual del Monto Transaccionado:**
+// COMPLETAR: Insertar aquí la fórmula DAX para el cálculo de porcentaje de variación del volumen transaccionado
+
+* **Tasa de Crecimiento Anual de Comisiones (KPI Principal):**
+// COMPLETAR: Insertar aquí la fórmula DAX que determina el crecimiento porcentual de comisiones YoY
+
+### 3. Lógicas del Promedio y Desglose por Canal
+* **Cálculo del Ticket Promedio Mensual:**
+// COMPLETAR: Insertar aquí la fórmula DAX empleada para el promedio del monto transaccionado
+
+* **Participación Proporcional del Método de Pago:**
+// COMPLETAR: Insertar aquí la fórmula DAX que calcula el porcentaje de distribución por pasarela de pago
