@@ -18,15 +18,21 @@ El diseño visual aprovecha un esquema jerárquico de navegación y paneles info
   * **Tasa de Crecimiento Anual de Comisiones:** Porcentaje del delta acumulado YoY.
 * **Líneas de Tendencia Evolutiva:** Bloque inferior con tres gráficos de líneas paralelas que contrastan el comportamiento mes a mes del Año Actual (Línea Continua) contra el Año Anterior (Línea Punteada) para los tres frentes clave: *Total Comisión, Total Monto y Total Monto Final*.
 
+![Parte1](../Imagenes/Parte1)
+
 ### 2. Capa de Métodos de Pago, Volumen y Promedios (Parte2.jpg)
 * **Enfoque:** Análisis de penetración de mercado y ticket promedio por canal de recaudación.
 * **Comparativa de Cantidad de Transacciones:** Gráfico de columnas apiladas mensuales que muestra visualmente la proporción del volumen transaccional ejecutado entre el periodo actual y el año anterior.
 * **Comparativa de Promedio Monto Transaccionado:** Gráfico de líneas que expone la evolución del ticket promedio mensual del negocio, identificando si los picos de facturación responden a un aumento del valor transaccional o del volumen neto de operaciones.
 * **Rendimiento por Métodos de Pago (vs. Año Anterior):** Gráfico de barras horizontales 100% apiladas que clasifica la participación y cuota de mercado de cada canal integrado (Webpay plus, MACH, Fintoc, ETpay, Khipu, Pago46, Floid, Hites, Transacción completa, ServiFacil), revelando variaciones en la preferencia del usuario en periodos YoY.
 
+![Parte2](../Imagenes/Parte2.jpg)
+
 ### 3. Matriz de Crecimiento Anual Neto (Parte3.jpg)
 * **Enfoque:** Reporte de variaciones marginales para control financiero de comisiones efectivas.
 * **Lógica Analítica:** Un gráfico de columnas en cascada enfocado exclusivamente en la **Tasa de Crecimiento Anual de la Comisión Efectiva agrupada por Mes**. Utiliza un formato de color semafórico condicional automático para resaltar los meses con crecimiento positivo (Azul) y aquellos con contracciones o variaciones negativas (Rojo) frente al mismo mes del año anterior.
+
+![Parte3](../Imagenes/Parte3.jpg)
 
 ---
 
