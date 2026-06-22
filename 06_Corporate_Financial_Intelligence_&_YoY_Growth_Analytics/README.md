@@ -38,7 +38,8 @@ Para sostener el dinamismo temporal y las comparaciones cruzadas de años, se im
 
 * **Monto Transaccionado del Año Anterior (LY):**
 ```dax
-// COMPLETAR: Insertar aquí la fórmula DAX utilizada para calcular el monto transaccionado del año anterior
+Fórmula DAX utilizada para calcular el monto transaccionado del año anterior:
+TotalMontoTotalAñoAnterior = CALCULATE(sum(Transacciones[montofinal]), SAMEPERIODLASTYEAR(Calendario[Date]))
 ```
 
 * **Comisión Acumulada del Año Anterior (LY):**
