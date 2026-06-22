@@ -39,6 +39,7 @@ Para sostener el dinamismo temporal y las comparaciones cruzadas de años, se im
 * **Monto Transaccionado del Año Anterior (LY):**
 ```dax
 // COMPLETAR: Insertar aquí la fórmula DAX utilizada para calcular el monto transaccionado del año anterior
+```
 
 * **Comisión Acumulada del Año Anterior (LY):**
 // COMPLETAR: Insertar aquí la fórmula DAX utilizada para calcular la comisión acumulada del año anterior
